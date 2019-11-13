@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gra TicTacToe</title>
+
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="start" id="start-conatiner">
+        <h6>Wybierz jak chcesz grać w TicTacToe <br> (Kółko i Krzyżyk)</h6>
+        <button class="btn-start" id="btn-start-left">1v1</button>
+        <button class="btn-start" id="btn-start-right">Z KOMPUTEREM</button>
+    </div>
+    <div class="start hide" id="choiceLvl">
+        <h6>Wybierz poziom</h6>
+        <button class="btn" id="btn-lvl-left">ULTRA ŁATWY</button>
+        <button class="btn" id="btn-lvl-middle-first">ŁATWY</button>
+        <button class="btn" id="btn-lvl-middle-second">ŚREDNI</button>
+        <button class="btn" id="btn-choice-middle-third">TRUDNY</button>
+        <button class="btn" id="btn-lvl-right">ULTRA TRUDNY</button>
+    </div>
+    <div id="container" class="hide">
+        <h4>----------------------------------</h4>
+        <div style="clear: both;"></div>
+        <h3>Tura gracza:</h3>
+        <div id="turn"></div>
+        <div id="tictactoe-container">
+            <div class="pole" id="pole0"></div>
+            <div class="pole" id="pole1"></div>
+            <div class="pole" id="pole2"></div>
+            <div style="clear: both;"></div>
+                    
+            <div class="pole" id="pole3"></div>
+            <div class="pole" id="pole4"></div>
+            <div class="pole" id="pole5"></div>
+            <div style="clear: both;"></div>
+                    
+            <div class="pole" id="pole6"></div>
+            <div class="pole" id="pole7"></div>
+            <div class="pole" id="pole8"></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="button">
+            <button id="btn-end">OD NOWA</button>
+        </div>
+    </div>
+
+    <script src="js/player.js"></script>
+    <script src="js/computer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
